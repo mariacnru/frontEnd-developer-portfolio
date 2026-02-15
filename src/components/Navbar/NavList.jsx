@@ -8,7 +8,7 @@ function NavList() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <ul className="flex items-center gap-5 text-sm">
+    <ul className="hidden sm:flex items-center gap-5 text-sm">
       <li className="">
         <ContactBtn />
       </li>
