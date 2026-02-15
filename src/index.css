@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Samim";
+  @apply bg-stone-100 transition-all duration-200;
+}
+
+html.dark section {
+  @apply bg-gray-900 text-stone-200;
+}
+html.dark nav {
+  @apply bg-gray-900/50 text-stone-200 border-b border-gray-700;
+}
+html.dark footer {
+  @apply bg-gray-800 text-stone-200 border-b border-gray-700;
+}
+html.dark .intro-hello {
+  @apply bg-gray-800 text-stone-200;
+}
+html.dark .intro-title {
+  @apply bg-gray-800 text-stone-200;
+}
+html.dark .intro-icon-bg {
+  @apply bg-gray-800;
+}
+html.dark .intro-co p {
+  @apply text-stone-200;
+}
+html.dark .intro-portfolio {
+  @apply hover:text-gray-700;
+}
+html.dark .hero-box {
+  @apply bg-gray-800 text-stone-200;
+}
+html.dark .hero-box p {
+  @apply text-stone-200;
+}
+html.dark .skill-box {
+  @apply bg-gray-800 text-stone-200;
+}
+html.dark .skill-description {
+  @apply text-stone-400;
+}
+html.dark .skill-box-desceription {
+  @apply text-stone-200;
+}
+html.dark .FAQ-co {
+  @apply bg-gray-800;
+}
+html.dark .FAQ-item {
+  @apply bg-gray-700;
+}
+html.dark .FAQ-item p {
+  @apply text-gray-400;
+}
+
+html {
+  scrollbar-color: #432dd7 beige;
+}
+
+::selection {
+  background-color: #ffea00;
+}
+
+nav {
+  @apply sticky top-0 backdrop-blur-md w-full z-50 bg-white/50 p-4 px-20 sm:flex justify-between hidden;
+}
+footer {
+  @apply space-y-10 p-5 bg-white border-t border-gray-300;
+}
+
+/* intro component */
+.intro-co {
+  @apply relative z-10 flex flex-col items-center p-5 md:p-20 overflow-hidden;
+}
+.intro-icon-bg {
+  @apply absolute w-10 bg-white rounded-full animate-pulse p-1;
+}
+.intro-content {
+  @apply flex flex-col gap-7 justify-center items-center md:items-start z-10;
+}
+.intro-hello {
+  @apply text-sm bg-white p-2 rounded-sm border-r-4 border-indigo-700;
+}
+.intro-title {
+  @apply text-xs sm:text-sm bg-white p-2 rounded-sm border-r-4 border-indigo-700;
+}
+.intro-contact-btn {
+  @apply flex justify-center items-center gap-2 bg-indigo-600 p-2 rounded-sm text-xs text-white hover:bg-indigo-700 transition cursor-pointer;
+}
+.intro-portfolio {
+  @apply flex justify-center items-center gap-2 text-xs p-2 hover:border-r-4 hover:bg-indigo-100 rounded-l-sm border-indigo-700 transition-all duration-75 cursor-pointer;
+}
+.hero-box {
+  @apply sm:w-3xl flex flex-wrap justify-between items-center gap-5 px-10 bg-white rounded-lg p-2;
+}
+
+.skill-box {
+  @apply flex flex-col items-center bg-white rounded-lg w-full p-7
+   space-y-5 hover:scale-95 transition-all duration-300 cursor-pointer
+   hover:shadow-2xl;
+}
+.skill-description {
+  @apply text-center text-sm text-gray-700 mt-5;
+}
+.skill-box-icon {
+  @apply flex justify-center items-center bg-indigo-500 w-10 h-10 rounded-md text-white;
+}
+.skill-box-title {
+  @apply flex justify-center items-center gap-1 font-semibold;
+}
+.skill-box-desceription {
+  @apply text-sm text-gray-700 text-center;
+}
+
+.FAQ-co {
+  @apply bg-white m-5 my-15 rounded-2xl grid grid-cols-1
+  sm:grid-cols-2 gap-10 sm:gap-0 px-5 py-10;
+}
+.FAQ-item {
+  @apply bg-gray-100 w-full p-4 rounded-md text-sm;
+}
+
+.footer-icon {
+  @apply bg-indigo-500 p-2 rounded-sm text-white hover:scale-110 cursor-pointer transition-all duration-300;
+}
