@@ -1,20 +1,43 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import navbar from "../../Data/navbar";
 import { NavLink } from "react-router";
+import { ThemeContext } from "../../context/Theme";
 
 function PhoneNavbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
-    <>
-      <div className="flex justify-start items-center w-full h-10 p-1 bg-indigo-500 cursor-pointer">
+    <div className="sm:hidden mb-5">
+      <div className="flex justify-between items-center w-full h-10 p-1 bg-indigo-500 cursor-pointer">
         <img
           src="/SVGIcons/menu-2.svg"
           alt="menu-icon"
           onClick={() => setIsOpen((prev) => !prev)}
         />
+
+        <div onClick={toggleTheme}>
+          <span className="cursor-pointer">
+            {theme === "light" ? (
+              <img
+                src="/SVGIcons/moon.svg"
+                alt="moon-icon"
+                loading="lazy"
+                width={19}
+              />
+            ) : (
+              <img
+                src="/SVGIcons/sun.svg"
+                alt="sun-icon"
+                loading="lazy"
+                width={19}
+              />
+            )}
+          </span>
+        </div>
       </div>
       <ul
-        className={`sm:hidden space-y-5 p-5 bg-white ${isOpen ? "h-fit" : "h-0 opacity-0"} transition`}
+        className={`space-y-5 bg-white dark:bg-gray-800 ${isOpen ? "h-fit opacity-100 p-5" : "h-0 opacity-0 p-0"} transition`}
       >
         {navbar.map((item) => (
           <li
@@ -35,7 +58,7 @@ function PhoneNavbar() {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
