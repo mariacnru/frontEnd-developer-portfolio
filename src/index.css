@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Digi-Titr";
+  src: url("/public/fonts/Digi-Titr-Plus-Bold-Line.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Samim";
+  src: url("/public/fonts/Samim.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
   font-family: "Samim";
   @apply bg-stone-100 transition-all duration-200;

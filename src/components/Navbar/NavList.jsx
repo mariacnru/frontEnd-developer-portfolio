@@ -13,37 +13,32 @@ function NavList() {
         <ContactBtn />
       </li>
       {navbar.map((item) => (
-        <NavLink
-          key={item.id}
-          to={item.href}
-          className={({ isActive }) => {
-            return isActive
-              ? "bg-indigo-50 rounded-t-sm py-1 px-2 border-b-2 border-indigo-700 dark:text-stone-800 transition-all duration-300"
-              : "border-0 transition-all duration-75";
-          }}
-        >
-          {item.title}
-        </NavLink>
+        <li key={item.id}>
+          <NavLink
+            to={item.href}
+            className={({ isActive }) =>
+              isActive
+                ? "bg-indigo-50 rounded-t-sm py-1 px-2 border-b-2 border-indigo-700 dark:text-stone-800 transition-all duration-300"
+                : "border-0 transition-all duration-75"
+            }
+          >
+            {item.title}
+          </NavLink>
+        </li>
       ))}
-      <div onClick={toggleTheme}>
-        <span className="cursor-pointer">
-          {theme === "light" ? (
-            <img
-              src="/SVGIcons/moon.svg"
-              alt="moon-icon"
-              loading="lazy"
-              width={17}
-            />
-          ) : (
-            <img
-              src="/SVGIcons/sun.svg"
-              alt="sun-icon"
-              loading="lazy"
-              width={17}
-            />
-          )}
-        </span>
-      </div>
+      <li>
+        <button
+          onClick={toggleTheme}
+          aria-label="Toggle theme"
+          className="cursor-pointer"
+        >
+          <img
+            src={theme === "light" ? "/SVGIcons/moon.svg" : "/SVGIcons/sun.svg"}
+            alt=""
+            width={17}
+          />
+        </button>
+      </li>
     </ul>
   );
 }

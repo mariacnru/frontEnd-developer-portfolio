@@ -20,7 +20,7 @@ function Intro() {
         <div className="flex flex-wrap items-center gap-5">
           <button className="intro-contact-btn">
             <img
-              src="/public/SVGIcons/phone.svg"
+              src="/SVGIcons/phone.svg"
               alt="phone-icon"
               className="text-white -rotate-90"
               width={15}
