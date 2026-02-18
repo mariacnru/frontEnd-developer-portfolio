@@ -2,8 +2,8 @@ import React from "react";
 
 function HeroIntro() {
   return (
-    <div className="flex flex-col justify-center gap-10 items-center md:items-start justify-self-center">
-      <span className="bg-white rounded-l-md border-r-4 border-indigo-700 text-sm py-1 px-2">
+    <div className="HeroIntro">
+      <span className="welcome">
         به دنیای خلاقانه من خوش آمدید !
       </span>
       <h2 className="text-3xl font-[Digi-Titr]">من مریم احمدآبادی هستم</h2>

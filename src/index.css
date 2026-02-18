@@ -64,6 +64,12 @@ html.dark .FAQ-item {
 html.dark .FAQ-item p {
   @apply text-gray-400;
 }
+html.dark .HeroIntro p {
+  @apply text-gray-400;
+}
+html.dark .welcome {
+  @apply bg-gray-800 text-gray-200;
+}
 html.dark .futureGoalsCard {
   @apply bg-gray-800;
 }
@@ -149,6 +155,12 @@ footer {
 }
 
 /* AboutUsPage */
+.HeroIntro {
+  @apply flex flex-col justify-center gap-10 items-center md:items-start justify-self-center;
+}
+.HeroIntro .welcome {
+  @apply bg-white rounded-l-md border-r-4 border-indigo-700 text-sm py-1 px-2;
+}
 .Philosophy {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10;
 }
