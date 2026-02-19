@@ -2,6 +2,8 @@
 
 A modern frontend portfolio project built to showcase projects, skills, and personal information with a clean and responsive UI.
 
+`Don't forget please to ⭐ this repo if you like it`
+
 ## 🚀 Tech Stack
 
 This project is developed using:
