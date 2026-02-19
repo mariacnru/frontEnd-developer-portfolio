@@ -2,7 +2,7 @@
 
 A modern frontend portfolio project built to showcase projects, skills, and personal information with a clean and responsive UI.
 
-`Don't forget please to ⭐ this repo if you like it`
+⭐ If you like this project, consider giving it a star!
 
 ## 🚀 Tech Stack
 
@@ -29,7 +29,11 @@ npm run dev
 
 ## 📌 Purpose
 
-This portfolio is created to demonstrate frontend development skills and modern React workflows.
+This portfolio demonstrates modern frontend development skills and React workflows.
+
+## 📷 Demo
+
+![Preview](/public/images/README.png)
 
 ---
 
