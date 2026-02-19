@@ -1,4 +1,4 @@
-# Frontend Portfolio
+# Frontend Developer Portfolio
 
 A modern frontend portfolio project built to showcase projects, skills, and personal information with a clean and responsive UI.
 

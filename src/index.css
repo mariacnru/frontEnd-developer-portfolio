@@ -82,6 +82,15 @@ html.dark .PhilosophyCard {
 html.dark .PhilosophyCard p {
   @apply text-gray-400;
 }
+html.dark .banner {
+  @apply bg-gray-800 text-gray-200;
+}
+html.dark .banner p {
+  @apply text-gray-400;
+}
+html.dark .banner li {
+  @apply border-gray-700;
+}
 
 html {
   scrollbar-color: #432dd7 beige;
@@ -176,4 +185,23 @@ footer {
 }
 .futureGoalsCard p {
   @apply text-sm text-gray-700 mt-2;
+}
+
+/* ContactPage */
+
+.banner {
+  @apply bg-white my-10 p-10 flex flex-col items-center gap-10 rounded-lg;
+}
+.banner li {
+  @apply flex items-center gap-2 text-sm py-2 px-4 border border-stone-300 rounded-md hover:bg-indigo-500 transition cursor-pointer;
+}
+
+.ContactWays {
+  @apply w-full grid grid-cols-1 sm:grid-cols-2 gap-5 lg:grid-cols-3 justify-self-center my-5;
+}
+.ContactWays img {
+  @apply border border-stone-200 p-1 rounded-md hover:scale-90 hover:bg-gray-200 transition duration-300 cursor-pointer;
+}
+.ContactWays .card {
+  @apply flex justify-between items-center w-full bg-white p-5 shadow-lg rounded-lg;
 }
