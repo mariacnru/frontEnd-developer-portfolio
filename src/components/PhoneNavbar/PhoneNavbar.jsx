@@ -8,10 +8,14 @@ function PhoneNavbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className="sm:hidden mb-5">
-      <div className="flex justify-between items-center w-full h-10 p-1 bg-indigo-500 cursor-pointer">
+    <div className="sm:hidden mb-5 sticky top-0 backdrop-blur-md z-50">
+      <div className="phone-navbar">
         <img
-          src="/SVGIcons/menu-2.svg"
+          src={
+            theme === "light"
+              ? "/SVGIcons/menu-dark.svg"
+              : "/SVGIcons/menu-light.svg"
+          }
           alt="menu-icon"
           onClick={() => setIsOpen((prev) => !prev)}
         />
@@ -37,7 +41,7 @@ function PhoneNavbar() {
         </div>
       </div>
       <ul
-        className={`space-y-5 bg-white dark:bg-gray-800 ${isOpen ? "h-fit opacity-100 p-5" : "h-0 opacity-0 p-0"} transition`}
+        className={`space-y-4 ${isOpen ? "h-fit opacity-100 p-5" : "h-0 opacity-0 p-0"} ${theme === "dark" ? "bg-gray-800" : "bg-white"}`}
       >
         {navbar.map((item) => (
           <li
