@@ -5,7 +5,7 @@ import Form from "./components/Form";
 
 function ContactPage() {
   return (
-    <div className="sm:mx-20">
+    <div className="mx-5 sm:mx-20">
       <Banner />
       <ContactWays />
       {/* <Form /> */}

@@ -115,7 +115,7 @@ footer {
   @apply absolute w-10 bg-white rounded-full animate-pulse p-1;
 }
 .intro-content {
-  @apply flex flex-col gap-7 justify-center items-center md:items-start z-10;
+  @apply flex flex-col gap-7 justify-center items-center z-10;
 }
 .intro-hello {
   @apply text-sm bg-white p-2 rounded-sm border-r-4 border-indigo-700;
@@ -130,7 +130,7 @@ footer {
   @apply flex justify-center items-center gap-2 text-xs p-2 hover:border-r-4 hover:bg-indigo-100 rounded-l-sm border-indigo-700 transition-all duration-75 cursor-pointer;
 }
 .hero-box {
-  @apply sm:w-3xl flex flex-wrap justify-between items-center gap-5 px-10 bg-white rounded-lg p-2;
+  @apply flex flex-wrap justify-between items-center gap-5 mt-5 bg-white rounded-lg p-2;
 }
 
 .skill-box {
@@ -203,5 +203,5 @@ footer {
   @apply border border-stone-200 p-1 rounded-md hover:scale-90 hover:bg-gray-200 transition duration-300 cursor-pointer;
 }
 .ContactWays .card {
-  @apply flex justify-between items-center w-full bg-white p-5 shadow-lg rounded-lg;
+  @apply flex justify-between items-center w-full bg-white p-5 rounded-lg;
 }

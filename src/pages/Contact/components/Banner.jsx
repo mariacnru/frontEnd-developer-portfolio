@@ -20,7 +20,7 @@ function Banner() {
         </p>
       </div>
 
-      <ul className="flex items-center gap-5">
+      <ul className="grid grid-cols-1 sm:grid-cols-3 items-center gap-5">
         <li className="">
           پاسخ‌گویی سریع
           <img src="/images/contact/bolt.png" alt="bolt-icon" width={20} />
