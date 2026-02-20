@@ -10,17 +10,10 @@ function Intro() {
         <h1 className="intro-title">
           متخصص توسعه‌دهنده فرانت‌اند | React & Modern Web Technologies
         </h1>
-        <h2 className="text-4xl font-[Digi-Titr] text-center">
-          ساخت تجربه‌های سریع، مدرن و کاربرپسند{" "}
-        </h2>
-        <p className="text-sm text-gray-700 text-wrap">
+        <h2 className="intro-text">ساخت تجربه‌های سریع، مدرن و کاربرپسند</h2>
+        <p className="intro-desceription">
           توسعه‌دهنده فرانت‌اند با تمرکز بر ساخت اپلیکیشن‌های سریع، مقیاس‌پذیر و
           کاربرپسند با کدنویسی تمیز و قابل نگهداری.
-          {/*           
-           متخصص توسعه‌دهنده فرانت‌اند
-          با تخصص در React.js و کتابخانه‌های مدرن، دارای تجربه در ساخت
-          اپلیکیشن‌های وب مقیاس‌پذیر، پویا و کاربرپسند. متعهد به نوشتن کدهای
-          تمیز، قابل نگهداری و با تمرکز بر تجربه کاربری برتر و کارایی عالی. */}
         </p>
         <div className="flex flex-wrap items-center gap-5">
           <button className="intro-contact-btn">دانلود رزومه (CV)</button>
@@ -33,15 +26,6 @@ function Intro() {
               loading="lazy"
             />
             تماس با من
-          </button>
-          <button className="intro-portfolio">
-            نمونه کار ها
-            <img
-              src="/SVGIcons/arrow-narrow-left.svg"
-              alt="arrow-left"
-              width={17}
-              loading="lazy"
-            />
           </button>
         </div>
         <HeroBox />
