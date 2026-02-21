@@ -132,6 +132,15 @@ html.dark .ContactWays .card {
 html.dark .ContactWays img {
   @apply border-gray-700 hover:bg-gray-700;
 }
+html.dark .contact-form {
+  @apply bg-gray-800;
+}
+html.dark .form-input {
+  @apply bg-gray-700 text-gray-200 border-gray-500 focus:shadow-gray-700;
+}
+html.dark .form-textarea {
+  @apply bg-gray-700 text-gray-200 border-gray-500 focus:shadow-gray-700;
+}
 
 html {
   scrollbar-color: #432dd7 beige;
@@ -253,21 +262,40 @@ footer {
 /* ContactPage */
 
 .banner {
-  @apply bg-white my-10 p-10 flex flex-col items-center gap-10 rounded-lg;
+  animation: opacity 0.8s linear;
+  @apply bg-white my-10 p-10 flex flex-col items-center gap-10 rounded-lg overflow-hidden;
 }
 .banner li {
   @apply flex items-center gap-2 text-sm py-2 px-4 border border-stone-300 rounded-md hover:bg-indigo-500 transition cursor-pointer;
 }
-
 .ContactWays {
-  @apply w-full flex flex-wrap justify-between items-center gap-5 my-5;
+  @apply w-full flex flex-wrap justify-between items-center gap-5 my-15;
 }
 .ContactWays img {
   @apply border border-stone-200 p-1 rounded-md hover:scale-90 hover:bg-gray-200 transition duration-300 cursor-pointer;
 }
 .ContactWays .card {
+  animation: fade-up 0.8s linear;
+  animation-timeline: view(80% 10%);
+
   @apply w-2xs flex grow justify-between items-center bg-white p-5 rounded-lg;
 }
 .ContactWays .card .card-span {
   @apply block text-gray-500 text-sm;
+}
+.contact-form {
+  animation: fade-up 0.8s both;
+  animation-timeline: view(80% 10%);
+
+  @apply bg-white flex justify-between items-center gap-10 p-5 my-15 rounded-md;
+}
+.contact-form .form-input {
+  @apply bg-stone-100 text-gray-700 text-sm p-2 rounded-sm w-2xs border border-gray-200 focus:outline-0 focus:shadow-[0px_0px_7px_4px] focus:shadow-gray-200 transition;
+}
+.contact-form .form-btn {
+  @apply bg-indigo-500 text-sm p-2 text-white rounded-sm hover:bg-indigo-700 transition cursor-pointer;
+}
+
+.contact-form .form-textarea {
+  @apply bg-stone-100 text-gray-700 text-sm p-2 rounded-sm w-full h-35 border border-gray-200 focus:outline-0 focus:shadow-[0px_0px_7px_4px] focus:shadow-gray-200 transition resize-none;
 }
