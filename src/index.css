@@ -126,6 +126,12 @@ html.dark .banner p {
 html.dark .banner li {
   @apply border-gray-700;
 }
+html.dark .ContactWays .card {
+  @apply bg-gray-800;
+}
+html.dark .ContactWays img {
+  @apply border-gray-700 hover:bg-gray-700;
+}
 
 html {
   scrollbar-color: #432dd7 beige;
@@ -261,4 +267,7 @@ footer {
 }
 .ContactWays .card {
   @apply w-2xs flex grow justify-between items-center bg-white p-5 rounded-lg;
+}
+.ContactWays .card .card-span {
+  @apply block text-gray-500 text-sm;
 }
