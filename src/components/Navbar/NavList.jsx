@@ -1,12 +1,8 @@
-import React, { useContext } from "react";
 import ContactBtn from "./ContactBtn";
 import navbar from "../../Data/navbar";
 import { NavLink } from "react-router";
-import { ThemeContext } from "../../context/Theme";
 
 function NavList() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
   return (
     <ul className="hidden sm:flex items-center gap-5 text-sm">
       <li className="">
@@ -26,19 +22,6 @@ function NavList() {
           </NavLink>
         </li>
       ))}
-      <li>
-        <button
-          onClick={toggleTheme}
-          aria-label="Toggle theme"
-          className="cursor-pointer"
-        >
-          <img
-            src={theme === "light" ? "/SVGIcons/moon.svg" : "/SVGIcons/sun.svg"}
-            alt=""
-            width={17}
-          />
-        </button>
-      </li>
     </ul>
   );
 }
