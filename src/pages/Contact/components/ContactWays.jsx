@@ -9,7 +9,7 @@ function ContactWays() {
       <div className="card">
         <div>
           <span className="card-span">ارتباط از طریق ایمیل</span>
-          <a href="mail:mariacnru@gmail.com" className="text-sm">
+          <a href="mail:mariacnru@gmail.com" className="text-sm hover:underline hover:text-sky-500 transition">
             mariacnru@gmail.com
           </a>
         </div>
@@ -26,8 +26,8 @@ function ContactWays() {
       <div className="card">
         <div>
           <span className="card-span">ارتباط از طریق شماره تماس</span>
-          <a href="tel:09336049409" className="text-sm">
-            0933 60 49 409
+          <a href="tel:09336049409" className="text-sm hover:underline hover:text-sky-500 transition">
+            <bdi> 0933 60 49 409</bdi>
           </a>
         </div>
         <img
@@ -43,7 +43,7 @@ function ContactWays() {
       <div className="card">
         <div>
           <span className="card-span">موقعیت مکانی </span>
-          <a href="mail:mariacnru@gmail.com" className="text-sm">
+          <a href="mail:mariacnru@gmail.com" className="text-sm hover:underline hover:text-sky-500 transition">
             ایران,تهران{" "}
           </a>
         </div>

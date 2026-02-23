@@ -275,9 +275,6 @@ footer {
   @apply border border-stone-200 p-1 rounded-md hover:scale-90 hover:bg-gray-200 transition duration-300 cursor-pointer;
 }
 .ContactWays .card {
-  animation: fade-up 0.8s linear;
-  animation-timeline: view(80% 10%);
-
   @apply w-2xs flex grow justify-between items-center bg-white p-5 rounded-lg;
 }
 .ContactWays .card .card-span {
@@ -287,13 +284,13 @@ footer {
   animation: fade-up 0.8s both;
   animation-timeline: view(80% 10%);
 
-  @apply bg-white flex justify-between items-center gap-10 p-5 my-15 rounded-md;
+  @apply bg-white p-5 my-15 rounded-md;
 }
 .contact-form .form-input {
-  @apply bg-stone-100 text-gray-700 text-sm p-2 rounded-sm w-2xs border border-gray-200 focus:outline-0 focus:shadow-[0px_0px_7px_4px] focus:shadow-gray-200 transition;
+  @apply bg-stone-100 text-gray-700 text-sm p-2 rounded-sm w-full border border-gray-200 focus:outline-0 focus:shadow-[0px_0px_7px_4px] focus:shadow-gray-200 transition;
 }
 .contact-form .form-btn {
-  @apply bg-indigo-500 text-sm p-2 text-white rounded-sm hover:bg-indigo-700 transition cursor-pointer;
+  @apply bg-indigo-500 w-full mt-5 text-sm p-2 text-white rounded-sm hover:bg-indigo-700 transition cursor-pointer;
 }
 
 .contact-form .form-textarea {
