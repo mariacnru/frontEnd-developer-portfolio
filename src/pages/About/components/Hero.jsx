@@ -8,7 +8,7 @@ function Hero() {
       <img
         src="/public/images/about/About me.svg"
         alt=""
-        className="w-100 justify-self-center"
+        className="hero-image"
       />
     </div>
   );
