@@ -265,6 +265,12 @@ footer {
 .HeroIntro .welcome {
   @apply bg-white rounded-l-md border-r-4 border-indigo-700 text-sm py-1 px-2;
 }
+.tech-stack-card {
+  animation: opacity alternate both;
+  animation-timeline: view(70% 10%);
+
+  @apply bg-white flex grow justify-between items-center p-4 rounded-sm w-52 hover:scale-95 transition-all duration-300 cursor-pointer;
+}
 .Philosophy {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10;
 }
