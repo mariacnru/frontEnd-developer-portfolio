@@ -16,7 +16,7 @@ function PostCard({
   featured,
 }) {
   return (
-    <div className="relative bg-white flex flex-col justify-between items-start p-2 rounded-md text-sm">
+    <div className="post-card">
       <div
         className="w-full h-48 px-2 flex items-center justify-center rounded-lg text-white font-bold overflow-hidden"
         style={{
@@ -57,7 +57,7 @@ function PostCard({
       <div className="w-full mt-4 text-sm">
         <h4 className="font-semibold">{title}</h4>
         <p className="text-gray-500 text-xs mt-2 pb-5">{excerpt}</p>
-        <div className="w-full text-xs py-2 text-gray-700 space-y-1 border-t border-gray-200 pt-5">
+        <div className="reading-time">
           <p className="">{date}</p>
           <p className="">زمان مطالعه : {readingTime}</p>
         </div>

@@ -162,6 +162,18 @@ html.dark .form-input {
 html.dark .form-textarea {
   @apply bg-gray-700 text-gray-200 border-gray-500 focus:shadow-gray-700;
 }
+html.dark .blog-head {
+  @apply bg-gray-800 text-gray-200 border-gray-500;
+}
+html.dark .blog-title {
+  @apply text-gray-400;
+}
+html.dark .post-card {
+  @apply bg-gray-800 text-gray-200 border-gray-700;
+}
+html.dark .reading-time {
+  @apply text-gray-400 border-gray-700;
+}
 
 html {
   scrollbar-color: #432dd7 beige;
@@ -340,4 +352,20 @@ footer {
 
 .contact-form .form-textarea {
   @apply bg-stone-100 text-gray-700 text-sm p-2 rounded-sm w-full h-35 border border-gray-200 focus:outline-0 focus:shadow-[0px_0px_7px_4px] focus:shadow-gray-200 transition resize-none;
+}
+
+/* blog */
+
+.blog-head {
+  animation: opacity 0.8s linear;
+  @apply bg-white mx-20 my-10 flex flex-col items-center gap-5 border border-gray-200 px-4 py-8 rounded-2xl;
+}
+.blog-title {
+  @apply text-3xl text-center font-bold text-gray-900;
+}
+.post-card {
+  @apply relative bg-white flex flex-col justify-between items-start p-2 rounded-md text-sm border border-gray-200;
+}
+.post-card .reading-time {
+  @apply w-full text-xs py-2 text-gray-700 space-y-1 border-t border-gray-200 pt-5;
 }
