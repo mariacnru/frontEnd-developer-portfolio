@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 function PostCard({
   id,
@@ -62,10 +62,12 @@ function PostCard({
           <p className="">زمان مطالعه : {readingTime}</p>
         </div>
       </div>
-
-      <NavLink className="mt-2 w-full text-center bg-linear-to-b from-indigo-400 to-indigo-600 px-2 py-2 text-gray-200 rounded-md">
-        مشاهده مقاله
-      </NavLink>
+      <Link
+        to={`/blog/${id}`}
+        className="mt-2 w-full text-center bg-linear-to-b from-indigo-400 to-indigo-600 px-2 py-2 text-gray-200 rounded-md"
+      >
+        <button className="cursor-pointer">مشاهده مقاله</button>
+      </Link>
     </div>
   );
 }
