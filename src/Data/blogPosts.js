@@ -1,0 +1,161 @@
+const blogPosts = [
+  {
+    id: 1,
+    title: "درک عمیق Closure در جاوااسکریپت",
+    slug: "deep-understanding-of-javascript-closures",
+    excerpt:
+      "Closure یکی از مهم‌ترین مفاهیم جاوااسکریپت است که هر فرانت‌اند دولوپری باید آن را بلد باشد.",
+    content:
+      "در این مقاله مفهوم Closure را با مثال‌های کاربردی بررسی می‌کنیم و کاربرد آن در پروژه‌های واقعی را توضیح می‌دهیم.",
+    coverImage: "/images/blog/js-closure.jpg",
+    category: "JavaScript",
+    tags: ["جاوااسکریپت", "Closure", "مفاهیم پیشرفته"],
+    author: "نام شما",
+    date: "1404-11-05",
+    readingTime: "۵ دقیقه",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "تفاوت let و var و const در جاوااسکریپت",
+    slug: "difference-between-let-var-const",
+    excerpt:
+      "یکی از سوالات پرتکرار مصاحبه‌های فرانت‌اند تفاوت let و var و const است.",
+    content:
+      "در این مقاله به بررسی scope، hoisting و رفتار هرکدام از این متغیرها می‌پردازیم.",
+    coverImage: "/images/blog/variables.jpg",
+    category: "JavaScript",
+    tags: ["جاوااسکریپت", "ES6"],
+    author: "نام شما",
+    date: "1404-10-30",
+    readingTime: "۴ دقیقه",
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "شروع کار با Tailwind CSS",
+    slug: "getting-started-with-tailwind-css",
+    excerpt:
+      "Tailwind CSS یک فریمورک utility-first است که سرعت توسعه UI را بالا می‌برد.",
+    content:
+      "در این مقاله نحوه نصب Tailwind با CLI و ساخت اولین کامپوننت را یاد می‌گیریم.",
+    coverImage: "/images/blog/tailwind.jpg",
+    category: "CSS",
+    tags: ["Tailwind", "CSS", "UI"],
+    author: "نام شما",
+    date: "1404-10-25",
+    readingTime: "۴ دقیقه",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Flexbox یا Grid؟ کدام بهتر است؟",
+    slug: "flexbox-vs-grid",
+    excerpt:
+      "در طراحی لایوت همیشه این سوال وجود دارد که از Flexbox استفاده کنیم یا Grid.",
+    content:
+      "در این مقاله تفاوت‌ها، کاربردها و سناریوهای استفاده از هرکدام را بررسی می‌کنیم.",
+    coverImage: "/images/blog/layout.jpg",
+    category: "CSS",
+    tags: ["Flexbox", "Grid", "Layout"],
+    author: "نام شما",
+    date: "1404-10-20",
+    readingTime: "۶ دقیقه",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "هوک useEffect در ری‌اکت به زبان ساده",
+    slug: "react-useeffect-simple",
+    excerpt:
+      "هوک useEffect برای مدیریت side effect ها در کامپوننت‌های تابعی استفاده می‌شود.",
+    content:
+      "در این مقاله dependency array و نحوه اجرای useEffect را با مثال بررسی می‌کنیم.",
+    coverImage: "/images/blog/useeffect.jpg",
+    category: "React",
+    tags: ["React", "Hooks"],
+    author: "نام شما",
+    date: "1404-10-15",
+    readingTime: "۶ دقیقه",
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "مدیریت State در ری‌اکت",
+    slug: "state-management-in-react",
+    excerpt: "State قلب تپنده کامپوننت‌های ری‌اکت است.",
+    content:
+      "با useState، بالا بردن state و مدیریت داده بین کامپوننت‌ها آشنا می‌شویم.",
+    coverImage: "/images/blog/state.jpg",
+    category: "React",
+    tags: ["React", "State"],
+    author: "نام شما",
+    date: "1404-10-10",
+    readingTime: "۵ دقیقه",
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "ساخت فرم حرفه‌ای با اعتبارسنجی در جاوااسکریپت",
+    slug: "form-validation-in-javascript",
+    excerpt:
+      "فرم‌ها بخش مهمی از هر وبسایتی هستند و باید به درستی اعتبارسنجی شوند.",
+    content:
+      "در این مقاله نحوه اعتبارسنجی ایمیل، پسورد و مدیریت خطاها را یاد می‌گیریم.",
+    coverImage: "/images/blog/form.jpg",
+    category: "JavaScript",
+    tags: ["Form", "Validation"],
+    author: "نام شما",
+    date: "1404-10-05",
+    readingTime: "۷ دقیقه",
+    featured: false,
+  },
+  {
+    id: 8,
+    title: "بهینه‌سازی سرعت سایت در فرانت‌اند",
+    slug: "frontend-performance-optimization",
+    excerpt: "سرعت سایت تاثیر مستقیم بر تجربه کاربری و سئو دارد.",
+    content:
+      "در این مقاله Lazy Loading، Code Splitting و بهینه‌سازی تصاویر را بررسی می‌کنیم.",
+    coverImage: "/images/blog/performance.jpg",
+    category: "Performance",
+    tags: ["Optimization", "Web Performance"],
+    author: "نام شما",
+    date: "1404-09-28",
+    readingTime: "۸ دقیقه",
+    featured: true,
+  },
+  {
+    id: 9,
+    title: "آشنایی با REST API برای فرانت‌اند",
+    slug: "introduction-to-rest-api",
+    excerpt: "برای ارتباط با بک‌اند باید مفاهیم REST API را بدانیم.",
+    content:
+      "در این مقاله با متدهای HTTP، fetch و نحوه دریافت داده از سرور آشنا می‌شویم.",
+    coverImage: "/images/blog/api.jpg",
+    category: "API",
+    tags: ["REST", "HTTP", "Fetch"],
+    author: "نام شما",
+    date: "1404-09-20",
+    readingTime: "۶ دقیقه",
+    featured: false,
+  },
+  {
+    id: 10,
+    title: "مسیر یادگیری فرانت‌اند در سال ۱۴۰۵",
+    slug: "frontend-roadmap-1405",
+    excerpt:
+      "اگر می‌خواهید فرانت‌اند دولوپر شوید، این نقشه راه به شما کمک می‌کند.",
+    content:
+      "در این مقاله مسیر یادگیری HTML، CSS، JavaScript و فریمورک‌ها را مرحله‌به‌مرحله توضیح می‌دهیم.",
+    coverImage: "/images/blog/roadmap.jpg",
+    category: "Career",
+    tags: ["Roadmap", "Frontend Developer"],
+    author: "نام شما",
+    date: "1404-09-10",
+    readingTime: "۹ دقیقه",
+    featured: true,
+  },
+];
+
+export default blogPosts;
