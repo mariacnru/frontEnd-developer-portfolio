@@ -10,6 +10,11 @@
   src: url("/public/fonts/Samim.woff2") format("woff2");
   font-display: swap;
 }
+@font-face {
+  font-family: "QurovademoRegular";
+  src: url("/public/fonts/QurovademoRegular-DYgy0.otf");
+  font-display: swap;
+}
 
 @keyframes fade-up {
   from {

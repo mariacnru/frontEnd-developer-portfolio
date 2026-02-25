@@ -16,42 +16,54 @@ function PostCard({
   featured,
 }) {
   return (
-    <div className="bg-white p-5 rounded-md text-sm">
-      <img src="" alt="" />
-      <div className="">
-        <h4 className="font-semibold">{title}</h4>
-        <p className="text-gray-500">{excerpt}</p>
-      </div>
-      <div className="mt-5">
-        <span
-          className={`${
+    <div className="relative bg-white flex flex-col justify-between items-start p-2 rounded-md text-sm">
+      <div
+        className="w-full h-48 px-2 flex items-center justify-center rounded-lg text-white font-bold overflow-hidden"
+        style={{
+          background:
             category === "JavaScript"
-              ? "bg-yellow-500"
+              ? `radial-gradient(circle at 20% 30%, #facc15, transparent 40%),
+           radial-gradient(circle at 80% 70%, #f97316, transparent 50%),
+           radial-gradient(circle at 50% 50%, #f59e0b, transparent 60%)`
               : category === "CSS"
-                ? "bg-purple-500"
+                ? `radial-gradient(circle at 30% 40%, #a78bfa, transparent 40%),
+           radial-gradient(circle at 70% 60%, #ec4899, transparent 50%),
+           radial-gradient(circle at 50% 50%, #0ea5e9, transparent 60%)`
                 : category === "React"
-                  ? "bg-sky-500"
-                  : "bg-gray-500"
-          } px-2 rounded-full text-xs text-white`}
-        >
+                  ? `radial-gradient(circle at 25% 35%, #38bdf8, transparent 40%),
+           radial-gradient(circle at 75% 65%, #3b82f6, transparent 50%),
+           radial-gradient(circle at 50% 50%, #6366f1, transparent 60%)`
+                  : `radial-gradient(circle at 20% 30%, #9ca3af, transparent 40%),
+           radial-gradient(circle at 80% 70%, #6b7280, transparent 50%),
+           radial-gradient(circle at 50% 50%, #d1d5db, transparent 60%)`,
+        }}
+      >
+        <span className="text-xl z-10 font-[QurovademoRegular]">
           {category}
         </span>
       </div>
-      <div className="text-xs">
-        <p className="">{date}</p>
-        <p className="">زمان مطالعه : {readingTime}</p>
-      </div>
-      <div className="text-xs space-x-2 mt-5">
+
+      <div className="text-xs mt-5 absolute left-5">
         {tags.map((item) => (
           <span
             key={item}
-            className="bg-sky-200 px-2 rounded-full border border-sky-400"
+            className="px-4 py-1 mx-1 rounded-full bg-white/20 backdrop-blur-md shadow-lg"
           >
             {item}
           </span>
         ))}
       </div>
-      <NavLink className="mt-2 bg-gray-200 border border-gray-400 px-2 py-1 rounded-sm">
+
+      <div className="w-full mt-4 text-sm">
+        <h4 className="font-semibold">{title}</h4>
+        <p className="text-gray-500 text-xs mt-2 pb-5">{excerpt}</p>
+        <div className="w-full text-xs py-2 text-gray-700 space-y-1 border-t border-gray-200 pt-5">
+          <p className="">{date}</p>
+          <p className="">زمان مطالعه : {readingTime}</p>
+        </div>
+      </div>
+
+      <NavLink className="mt-2 w-full text-center bg-linear-to-b from-indigo-400 to-indigo-600 px-2 py-2 text-gray-200 rounded-md">
         مشاهده مقاله
       </NavLink>
     </div>
