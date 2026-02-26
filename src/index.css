@@ -174,6 +174,24 @@ html.dark .post-card {
 html.dark .reading-time {
   @apply text-gray-400 border-gray-700;
 }
+html.dark .samples-hero {
+  @apply bg-gray-800;
+}
+html.dark .samples-hero-span {
+  @apply text-gray-200 bg-gray-900;
+}
+html.dark .samples-hero-span::before {
+  box-shadow: -10px -8px #101828;
+}
+html.dark .samples-hero-span::after {
+  box-shadow: 9px -8px #101828;
+}
+html.dark .hero-cards {
+  @apply bg-gray-800;
+}
+html.dark .hero-cards-item {
+  @apply bg-gray-700;
+}
 
 html {
   scrollbar-color: #432dd7 beige;
@@ -368,4 +386,45 @@ footer {
 }
 .post-card .reading-time {
   @apply w-full text-xs py-2 text-gray-700 space-y-1 border-t border-gray-200 pt-5;
+}
+
+/*SamplesPage*/
+.samples-hero {
+  animation: opacity 0.8s linear;
+  @apply w-full h-fit bg-white flex flex-col
+    items-center p-5 pt-0 rounded-md;
+}
+.samples-hero img {
+  background: radial-gradient(#5700ff, #935bff);
+}
+.samples-hero-span {
+  @apply relative text-sm p-0.5 -top-px bg-stone-100 px-2 rounded-b-lg;
+}
+.samples-hero-span::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: transparent;
+  position: absolute;
+  right: -20px;
+  top: 1px;
+  box-shadow: -10px -8px #f5f5f4;
+}
+.samples-hero-span::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: transparent;
+  position: absolute;
+  left: -20px;
+  top: 1px;
+  box-shadow: 9px -8px #f5f5fa;
+}
+.hero-cards {
+  @apply bg-white flex sm:flex-nowrap flex-wrap justify-between items-center gap-5 my-10 p-5 rounded-md;
+}
+.hero-cards-item {
+  @apply bg-gray-100 flex justify-center items-center p-5 w-full h-20 rounded-md text-sm hover:scale-105 transition-all duration-300 cursor-pointer;
 }

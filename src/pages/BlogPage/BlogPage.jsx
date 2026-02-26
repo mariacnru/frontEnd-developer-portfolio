@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import blogPosts from "../../Data/blogPosts";
 import PostCard from "./components/PostCard";
 import BlogHead from "./components/BlogHead";
-import Pagination from "./components/Pagination";
+
+const Pagination = lazy(() => import("./components/Pagination"));
 
 function BlogPage() {
   const [search, setSearch] = useState("");
@@ -35,11 +36,19 @@ function BlogPage() {
       </div>
 
       {totalPages > 1 && (
-        <Pagination
-          currentPage={page}
-          totalPages={totalPages}
-          onPageChange={setPage}
-        />
+        <Suspense
+          fallback={
+            <div className="text-center text-gray-400 my-5">
+              در حال بارگذاری...
+            </div>
+          }
+        >
+          <Pagination
+            currentPage={page}
+            totalPages={totalPages}
+            onPageChange={setPage}
+          />
+        </Suspense>
       )}
     </>
   );
