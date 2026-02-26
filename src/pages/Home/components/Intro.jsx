@@ -5,7 +5,7 @@ function Intro() {
     <div className="intro-co">
       <div className="intro-content">
         <span data-aos="fade-up" className="intro-hello">
-          سلام به شما ✨🤗
+          MariaDev 👩🏻‍💻
         </span>
         <h1 className="intro-title">
           متخصص توسعه‌دهنده فرانت‌اند | React & Modern Web Technologies

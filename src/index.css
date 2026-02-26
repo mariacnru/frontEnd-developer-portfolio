@@ -189,6 +189,9 @@ html.dark .samples-hero-span::after {
 html.dark .hero-cards {
   @apply bg-gray-800;
 }
+html.dark .tech-stack-card {
+  @apply bg-gray-700;
+}
 html.dark .hero-cards-item {
   @apply bg-gray-700;
 }

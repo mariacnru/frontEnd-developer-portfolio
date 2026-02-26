@@ -14,7 +14,7 @@ const FAQItem = React.memo(({ item, isOpen, toggle }) => {
   }, [isOpen]);
 
   return (
-    <li>
+    <li className="FAQ-item">
       <div
         onClick={() => toggle(item.id)}
         className="flex justify-between items-center cursor-pointer"
