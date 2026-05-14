@@ -24,8 +24,8 @@ const footerContact = [
   {
     id: 3,
     Icon: "/SVGIcons/phone-calling.svg",
-    content: "09336049409",
-    href: "tel:09336049409",
+    content: "09120000000",
+    href: "tel:09120000000",
   },
 ];
 

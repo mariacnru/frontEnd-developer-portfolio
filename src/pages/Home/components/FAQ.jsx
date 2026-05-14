@@ -20,11 +20,11 @@ function FAQ() {
             اگر سوال دیگه ای داشته باشید میتونید از طریق راه های ارتباطی با من
             در ازتباط باشید 😊🙏🏻
             <a
-              href="tel:0933 604 9409"
+              href="tel:0912 000 0000"
               className="text-sky-400 text-xs block hover:underline underline-offset-2"
               style={{ direction: "ltr" }}
             >
-              0933 604 9409
+              0912 000 0000
             </a>
           </p>
         </div>
