@@ -6,7 +6,9 @@ function Skils() {
     <div className="mt-15 p-4 relative z-40">
       <div className="absolute left-70 bottom-40 blur-[8rem] rounded-full w-175 h-75 -z-10 -bg-linear-60 from-indigo-500 from-60% via-cyan-500 to-20% to-sky-500"></div>
       <>
-        <h2 className="text-2xl text-center mt-10">مهارت های خلاقانه من</h2>
+        <h2 className="text-2xl text-center mt-10 font-morabba-medium">
+          مهارت های خلاقانه من
+        </h2>
         <p className="skill-description">
           مهارت های من به عنوان توسعه دهنده فرانت شامل زبان های برنامه نویسی و
           کتابخانه ها و ...

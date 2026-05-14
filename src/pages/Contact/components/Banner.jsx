@@ -10,7 +10,7 @@ function Banner() {
       />
 
       <div>
-        <h2 className="text-2xl text-center font-semibold">
+        <h2 className="text-2xl text-center font-morabba-medium">
           با من در تماس باشید 🤗
         </h2>
 

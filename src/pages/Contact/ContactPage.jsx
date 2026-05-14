@@ -10,7 +10,9 @@ function ContactPage() {
       <Banner />
       <ContactWays />
 
-      <p className="text-center text-xl">ارتباط با من از طریق ایمیل</p>
+      <p className="text-center text-xl font-morabba-medium">
+        ارتباط با من از طریق ایمیل
+      </p>
 
       <FormContact />
     </div>

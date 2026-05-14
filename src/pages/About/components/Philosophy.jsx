@@ -5,7 +5,7 @@ import PhilosophyCard from "./PhilosophyCard";
 function Philosophy() {
   return (
     <>
-      <p className="text-center text-2xl my-30">فلسفه کاری من</p>
+      <p className="text-center text-2xl my-30 font-morabba-medium">فلسفه کاری من</p>
       <div className="Philosophy">
         {philosophy.map((item) => (
           <PhilosophyCard key={item.id} {...item} />

@@ -8,7 +8,9 @@ function ContactWays() {
     <div className="ContactWays">
       <div className="card">
         <div>
-          <span className="card-span">ارتباط از طریق ایمیل</span>
+          <span className="card-span font-morabba-medium">
+            ارتباط از طریق ایمیل
+          </span>
           <a
             href="mail:mariacnru@gmail.com"
             className="text-sm hover:underline hover:text-sky-500 transition"

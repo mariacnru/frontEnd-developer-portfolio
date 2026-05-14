@@ -2,15 +2,13 @@ import React from "react";
 
 function BlogHead({ searchValue, setSearchValue }) {
   return (
-    <div
-      className="blog-head"
-    >
+    <div className="blog-head">
       <span className="text-xs text-gray-500 border border-gray-400 px-4 py-2 rounded-full">
         وبلاگ
       </span>
 
       <div className="mt-2 mb-6">
-        <h2 className="blog-title">
+        <h2 className="blog-title font-morabba-medium">
           جدیدترین مقالات و نکات برنامه‌نویسی
         </h2>
         <p className="mt-2 text-sm text-gray-600">

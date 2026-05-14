@@ -16,15 +16,15 @@ function HeroIntro() {
       </p>
 
       <div className="flex justify-between items-center w-full text-lg border-y border-indigo-700 h-20">
-        <span className="flex items-center gap-2 font-semibold">
+        <span className="flex items-center gap-2 font-morabba-medium">
           <img src="/SVGIcons/plus.svg" alt="plus-icon" width={17} /> 2 سال
           سابقه کار
         </span>
-        <span className="flex items-center gap-2 font-semibold">
+        <span className="flex items-center gap-2 font-morabba-medium">
           <img src="/SVGIcons/plus.svg" alt="plus-icon" width={17} /> 4 نمونه
           کار
         </span>
-        <span className="flex items-center gap-2 font-semibold">
+        <span className="flex items-center gap-2 font-morabba-medium">
           <img src="/SVGIcons/plus.svg" alt="plus-icon" width={17} /> همیشه
           آپدیت
         </span>

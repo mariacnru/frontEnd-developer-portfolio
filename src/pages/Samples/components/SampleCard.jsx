@@ -9,7 +9,7 @@ function SampleCard() {
       {data.map((item) => (
         <div
           key={item.id}
-          className="w-full h-87 flex flex-col justify-between bg-white rounded-t-xl shadow-xl"
+          className="sample-card w-full h-87 flex flex-col justify-between bg-white rounded-t-xl shadow-xl"
         >
           <div className="p-5 space-y-2">
             <h2 className="font-morabba-medium">{item.title}</h2>
