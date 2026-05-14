@@ -12,7 +12,7 @@ function Hero() {
           className="bg-indigo-500 p-2 rounded-sm mt-10"
         />
 
-        <h2 className="text-2xl font-[Digi-Titr] mt-5">
+        <h2 className="text-2xl font-morabba-medium mt-5">
           برای مشاهده نمونه کار ها اسکرول کنید
         </h2>
         <p className="mt-3 text-center text-sm opacity-50">

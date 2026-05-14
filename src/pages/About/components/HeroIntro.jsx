@@ -3,10 +3,8 @@ import React from "react";
 function HeroIntro() {
   return (
     <div className="HeroIntro">
-      <span className="welcome">
-        به دنیای خلاقانه من خوش آمدید !
-      </span>
-      <h2 className="text-3xl font-[Digi-Titr]">من مریم احمدآبادی هستم</h2>
+      <span className="welcome">به دنیای خلاقانه من خوش آمدید !</span>
+      <h2 className="text-3xl font-morabba-medium">من مریم احمدآبادی هستم</h2>
       <p className="text-sm text-gray-600 text-wrap">
         من یک توسعه‌دهنده فرانت‌اند در حال رشد هستم که تمرکزم روی ساخت رابط‌های
         کاربری تمیز، قابل دسترس و بهینه است. با JavaScript مدرن، React و
