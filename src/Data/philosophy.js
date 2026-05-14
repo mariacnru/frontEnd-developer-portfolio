@@ -37,7 +37,7 @@ const philosophy = [
   {
     id: 6,
     title: "ابزارها و همکاری حرفه‌ای",
-    img: "/public/images/about/Icon Container.png",
+    img: "/images/about/Icon Container.png",
     content:
       "با Git و GitHub پروژه‌ها را مدیریت و نسخه‌بندی می‌کنم و با دیگران به صورت موثر همکاری می‌کنم، همچنین از کتابخانه‌هایی مانند Swiper.js برای ایجاد تجربه تعاملی جذاب بهره می‌برم.",
   },
