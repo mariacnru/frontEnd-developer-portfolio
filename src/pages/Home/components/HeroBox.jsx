@@ -1,20 +1,30 @@
-import gitImg from "/frontEnd-developer-portfolio/images/hero/git.svg";
-import githubImg from "/frontEnd-developer-portfolio/images/hero/github.svg";
-import reactImg from "/frontEnd-developer-portfolio/images/hero/react.svg";
-import tailwindImg from "/frontEnd-developer-portfolio/images/hero/tailwindcss-48.png";
-import jsImg from "/frontEnd-developer-portfolio/images/hero/js.svg";
-import cssImg from "/frontEnd-developer-portfolio/images/hero/css.svg";
-import htmlImg from "/frontEnd-developer-portfolio/images/hero/html-5.svg";
-
 function HeroBox() {
   const skills = [
-    { name: "Git", img: gitImg },
-    { name: "GitHub", img: githubImg },
-    { name: "React.js", img: reactImg },
-    { name: "Tailwindcss", img: tailwindImg },
-    { name: "Javascript [ES6]", img: jsImg },
-    { name: "CSS 33", img: cssImg },
-    { name: "HTML 5", img: htmlImg },
+    { name: "Git", img: "/frontEnd-developer-portfolio/images/hero/git.svg" },
+    {
+      name: "GitHub",
+      img: "/frontEnd-developer-portfolio/images/hero/github.svg",
+    },
+    {
+      name: "React.js",
+      img: "/frontEnd-developer-portfolio/images/hero/react.svg",
+    },
+    {
+      name: "Tailwindcss",
+      img: "/frontEnd-developer-portfolio/images/hero/tailwindcss-48.png",
+    },
+    {
+      name: "Javascript [ES6]",
+      img: "/frontEnd-developer-portfolio/images/hero/js.svg",
+    },
+    {
+      name: "CSS 33",
+      img: "/frontEnd-developer-portfolio/images/hero/css.svg",
+    },
+    {
+      name: "HTML 5",
+      img: "/frontEnd-developer-portfolio/images/hero/html-5.svg",
+    },
   ];
   return (
     <div className="hero-box">
