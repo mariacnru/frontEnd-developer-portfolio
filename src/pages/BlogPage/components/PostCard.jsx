@@ -43,7 +43,7 @@ function PostCard({
         </span>
       </div>
 
-      <div className="text-xs mt-5 absolute left-5">
+      <div className="flex flex-wrap items-center text-xs mt-5 absolute left-5">
         {tags.map((item) => (
           <span
             key={item}

@@ -383,7 +383,7 @@ footer {
 
 .blog-head {
   animation: opacity 0.8s linear;
-  @apply bg-white mx-20 my-10 flex flex-col items-center gap-5 border border-gray-200 px-4 py-8 rounded-2xl;
+  @apply bg-white mx-5 sm:mx-10 lg:mx-20 my-10 flex flex-col items-center gap-5 border border-gray-200 px-4 py-8 rounded-2xl;
 }
 .blog-title {
   @apply text-3xl text-center text-gray-900;

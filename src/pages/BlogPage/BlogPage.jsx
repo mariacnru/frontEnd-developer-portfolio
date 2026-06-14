@@ -24,7 +24,7 @@ function BlogPage() {
     <>
       <BlogHead searchValue={search} setSearchValue={setSearch} />
 
-      <div className="mx-20 my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="mx-5 sm:mx-10 lg:mx-20 my-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {currentPosts.map((p) => (
           <PostCard key={p.id} {...p} />
         ))}

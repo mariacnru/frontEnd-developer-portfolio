@@ -6,7 +6,7 @@ import TechStack from "./components/TechStack";
 
 function AboutUsPage() {
   return (
-    <div className="mx-5 md:mx-20 my-10">
+    <div className="mx-5 md:mx-20 my-10 overflow-x-hidden">
       <Hero />
       <TechStack />
       <Philosophy />

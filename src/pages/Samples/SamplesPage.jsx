@@ -5,7 +5,7 @@ import SampleCard from "./components/SampleCard";
 
 function SamplesPage() {
   return (
-    <div className="mx-20 my-10">
+    <div className="mx-5 sm:mx-10 lg:mx-20 my-10">
       <Hero />
       <HeroCards />
       <SampleCard />
