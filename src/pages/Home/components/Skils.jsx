@@ -4,7 +4,8 @@ import SkilsBox from "./SkilsBox";
 function Skils() {
   return (
     <div className="mt-15 p-4 relative z-40">
-      <div className="absolute left-70 bottom-40 blur-[8rem] rounded-full w-175 h-75 -z-10 -bg-linear-60 from-indigo-500 from-60% via-cyan-500 to-20% to-sky-500"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-linear-to-r from-indigo-500 via-cyan-500 to-sky-500 rounded-full blur-[140px] opacity-60 -z-10"></div>
+
       <>
         <h2 className="text-2xl text-center mt-10 font-morabba-medium">
           مهارت های خلاقانه من

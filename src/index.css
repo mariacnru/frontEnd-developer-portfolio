@@ -209,7 +209,7 @@ html {
 }
 
 nav {
-  @apply backdrop-blur-md w-full z-50 bg-white/50 p-4 px-20 sm:flex justify-between hidden;
+  @apply sticky top-0 backdrop-blur-md w-full z-50 bg-white/50 p-4 px-20 sm:flex justify-between hidden;
 }
 .phone-navbar {
   @apply p-4 flex justify-between border-b border-gray-200;
