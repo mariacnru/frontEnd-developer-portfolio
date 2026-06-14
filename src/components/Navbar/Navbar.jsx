@@ -13,7 +13,11 @@ function Navbar() {
         className="cursor-pointer"
       >
         <img
-          src={theme === "light" ? "/SVGIcons/moon.svg" : "/SVGIcons/sun.svg"}
+          src={
+            theme === "light"
+              ? "/frontEnd-developer-portfolio/SVGIcons/moon.svg"
+              : "/frontEnd-developer-portfolio/SVGIcons/sun.svg"
+          }
           alt=""
           width={17}
         />

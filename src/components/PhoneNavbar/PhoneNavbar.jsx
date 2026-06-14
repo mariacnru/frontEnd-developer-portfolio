@@ -13,8 +13,8 @@ function PhoneNavbar() {
         <img
           src={
             theme === "light"
-              ? "/SVGIcons/menu-dark.svg"
-              : "/SVGIcons/menu-light.svg"
+              ? "/frontEnd-developer-portfolio/SVGIcons/menu-dark.svg"
+              : "/frontEnd-developer-portfolio/SVGIcons/menu-light.svg"
           }
           alt="menu-icon"
           onClick={() => setIsOpen((prev) => !prev)}
@@ -24,14 +24,14 @@ function PhoneNavbar() {
           <span className="cursor-pointer">
             {theme === "light" ? (
               <img
-                src="/SVGIcons/moon.svg"
+                src="/frontEnd-developer-portfolio/SVGIcons/moon.svg"
                 alt="moon-icon"
                 loading="lazy"
                 width={19}
               />
             ) : (
               <img
-                src="/SVGIcons/sun.svg"
+                src="/frontEnd-developer-portfolio/SVGIcons/sun.svg"
                 alt="sun-icon"
                 loading="lazy"
                 width={19}
