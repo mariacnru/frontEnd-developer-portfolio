@@ -53,7 +53,7 @@ function PhoneNavbar() {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => {
                 return isActive
-                  ? "bg-indigo-50 rounded-l-sm py-0.5 px-2 border-r-2 border-indigo-700 dark:text-stone-800 transition-all duration-300"
+                  ? "bg-indigo-50 rounded-l-sm py-0.5 px-2 border-r-2 border-indigo-700 text-stone-800 transition-all duration-300"
                   : "border-0 transition-all duration-75";
               }}
             >

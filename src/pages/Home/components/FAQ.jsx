@@ -11,7 +11,7 @@ function FAQ() {
 
       <div className="FAQ-co overflow-hidden mt-6 relative">
         {/* 🔥 Blur background */}
-        <div className="absolute top-0 right-0 w-72 h-72 bg-linear-to-r from-indigo-500 via-cyan-500 to-sky-500 rounded-full blur-[120px] opacity-60"></div>
+        <div className="hidden lg:block absolute top-0 right-0 w-72 h-72 bg-linear-to-r from-indigo-500 via-cyan-500 to-sky-500 rounded-full blur-[120px] opacity-60"></div>
 
         {/* Content */}
         <div className="relative z-10">

@@ -4,7 +4,7 @@ import SkilsBox from "./SkilsBox";
 function Skils() {
   return (
     <div className="mt-15 p-4 relative z-40">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-linear-to-r from-indigo-500 via-cyan-500 to-sky-500 rounded-full blur-[140px] opacity-60 -z-10"></div>
+      <div className="hidden lg:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-linear-to-r from-indigo-500 via-cyan-500 to-sky-500 rounded-full blur-[140px] opacity-60 -z-10"></div>
 
       <>
         <h2 className="text-2xl text-center mt-10 font-morabba-medium">
