@@ -4,7 +4,7 @@ const FAQAcordion = lazy(() => import("./FAQAcordion"));
 
 function FAQ() {
   return (
-    <div className="mt-10 px-4">
+    <div className="mt-10">
       <h2 className="text-center text-3xl font-morabba-medium">
         سوالات پر تکرار
       </h2>

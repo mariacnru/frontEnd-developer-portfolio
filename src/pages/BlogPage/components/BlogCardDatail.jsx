@@ -17,7 +17,7 @@ function BlogCardDatail() {
   if (!post) return <p>مقاله پیدا نشد</p>;
 
   return (
-    <div className="mx-20 my-10">
+    <div className="mx-5 sm:mx-10 lg:mx-20 my-10">
       <div
         className="w-full h-48 px-2 mb-5 flex items-center justify-center rounded-lg text-white font-bold overflow-hidden"
         style={{
@@ -45,7 +45,12 @@ function BlogCardDatail() {
       </div>
       <div className="">
         {post.tags.map((item) => (
-          <span key={item} className="bg-white text-indigo-500 px-2 text-sm rounded-2xl mx-1">{item}</span>
+          <span
+            key={item}
+            className="bg-white text-indigo-500 px-2 text-sm rounded-2xl mx-1"
+          >
+            {item}
+          </span>
         ))}
       </div>
       <div className="mt-10 space-y-10">
