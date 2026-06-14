@@ -23,8 +23,8 @@ const FAQItem = React.memo(({ item, isOpen, toggle }) => {
         <img
           src={
             theme === "light"
-              ? "/SVGIcons/chevron-down.svg"
-              : "/SVGIcons/chevron-down-white.svg"
+              ? "/frontEnd-developer-portfolio/SVGIcons/chevron-down.svg"
+              : "/frontEnd-developer-portfolio/SVGIcons/chevron-down-white.svg"
           }
           alt="icon"
           width={17}

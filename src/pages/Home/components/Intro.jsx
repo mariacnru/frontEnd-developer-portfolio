@@ -11,7 +11,7 @@ function Intro() {
           متخصص توسعه‌دهنده فرانت‌اند | React & Modern Web Technologies
         </h1>
         <h2 className="intro-text">ساخت تجربه‌های سریع، مدرن و کاربرپسند</h2>
-        <p className="intro-desceription">
+        <p className="intro-desceription text-center">
           توسعه‌دهنده فرانت‌اند با تمرکز بر ساخت اپلیکیشن‌های سریع، مقیاس‌پذیر و
           کاربرپسند با کدنویسی تمیز و قابل نگهداری.
         </p>
@@ -19,7 +19,7 @@ function Intro() {
           <button className="intro-contact-btn">دانلود رزومه (CV)</button>
           <button className="intro-contact-btn">
             <img
-              src="/SVGIcons/phone.svg"
+              src="/frontEnd-developer-portfolio/SVGIcons/phone.svg"
               alt="phone-icon"
               className="text-white -rotate-90"
               width={15}

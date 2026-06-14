@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div className="banner">
       <img
-        src="/images/contact/Icon Container message.png"
+        src="/frontEnd-developer-portfolio/images/contact/Icon Container message.png"
         alt="message-icon"
         width={40}
       />
@@ -23,13 +23,13 @@ function Banner() {
       <ul className="grid grid-cols-1 sm:grid-cols-3 items-center gap-5">
         <li className="">
           پاسخ‌گویی سریع
-          <img src="/images/contact/bolt.png" alt="bolt-icon" width={20} />
+          <img src="/frontEnd-developer-portfolio/images/contact/bolt.png" alt="bolt-icon" width={20} />
         </li>
 
         <li className="">
           زمان‌بندی منعطف
           <img
-            src="/images/contact/sparkles.png"
+            src="/frontEnd-developer-portfolio/images/contact/sparkles.png"
             alt="sparkles-icon"
             width={20}
           />
@@ -37,7 +37,7 @@ function Banner() {
 
         <li className="">
           پشتیبانی مستمر
-          <img src="/images/contact/clock.png" alt="clock-icon" width={20} />
+          <img src="/frontEnd-developer-portfolio/images/contact/clock.png" alt="clock-icon" width={20} />
         </li>
       </ul>
     </div>

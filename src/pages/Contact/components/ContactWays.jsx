@@ -21,8 +21,8 @@ function ContactWays() {
         <img
           src={
             theme === "light"
-              ? "/SVGIcons/arrow-narrow-left.svg"
-              : "/SVGIcons/arrow-narrow-left-white.svg"
+              ? "/frontEnd-developer-portfolio/SVGIcons/arrow-narrow-left.svg"
+              : "/frontEnd-developer-portfolio/SVGIcons/arrow-narrow-left-white.svg"
           }
           alt="icon"
         />
@@ -41,8 +41,8 @@ function ContactWays() {
         <img
           src={
             theme === "light"
-              ? "/SVGIcons/arrow-narrow-left.svg"
-              : "/SVGIcons/arrow-narrow-left-white.svg"
+              ? "/frontEnd-developer-portfolio/SVGIcons/arrow-narrow-left.svg"
+              : "/frontEnd-developer-portfolio/SVGIcons/arrow-narrow-left-white.svg"
           }
           alt="icon"
         />
@@ -61,8 +61,8 @@ function ContactWays() {
         <img
           src={
             theme === "light"
-              ? "/SVGIcons/arrow-narrow-left.svg"
-              : "/SVGIcons/arrow-narrow-left-white.svg"
+              ? "/frontEnd-developer-portfolio/SVGIcons/arrow-narrow-left.svg"
+              : "/frontEnd-developer-portfolio/SVGIcons/arrow-narrow-left-white.svg"
           }
           alt="icon"
         />

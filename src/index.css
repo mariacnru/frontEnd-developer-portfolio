@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "morabba";
-  src: url(/public/fonts/Morabba/woff2/Morabba-Medium.woff2);
+  src: url(/fonts/Morabba/woff2/Morabba-Medium.woff2);
 }
 @font-face {
   font-family: "dana";
-  src: url(/public/fonts/Dana/woff2/DanaFaNum-Regular.woff2);
+  src: url(/fonts/Dana/woff2/DanaFaNum-Regular.woff2);
 }
 
 @theme {
@@ -196,7 +196,7 @@ html.dark .hero-cards-item {
 html.dark .sample-card {
   @apply bg-gray-700;
 }
-html.dark .sample-card p{
+html.dark .sample-card p {
   @apply text-gray-300/80;
 }
 
@@ -209,7 +209,7 @@ html {
 }
 
 nav {
-  @apply sticky top-0 backdrop-blur-md w-full z-50 bg-white/50 p-4 px-20 sm:flex justify-between hidden;
+  @apply backdrop-blur-md w-full z-50 bg-white/50 p-4 px-20 sm:flex justify-between hidden;
 }
 .phone-navbar {
   @apply p-4 flex justify-between border-b border-gray-200;

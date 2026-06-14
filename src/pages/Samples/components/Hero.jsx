@@ -7,7 +7,7 @@ function Hero() {
         <span className="samples-hero-span">نمونه کار ها</span>
 
         <img
-          src="/SVGIcons/samples.svg"
+          src="/frontEnd-developer-portfolio/SVGIcons/samples.svg"
           alt="icon"
           className="bg-indigo-500 p-2 rounded-sm mt-10"
         />
@@ -21,7 +21,7 @@ function Hero() {
         </p>
         <button className="flex items-center gap-2 text-xs text-white bg-indigo-600 p-2 my-5 rounded-sm hover:bg-indigo-700 transition cursor-pointer">
           <img
-            src="/SVGIcons/phone.svg"
+            src="/frontEnd-developer-portfolio/SVGIcons/phone.svg"
             alt="phone-icon"
             className="text-white -rotate-90"
             width={15}

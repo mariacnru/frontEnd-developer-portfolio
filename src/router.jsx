@@ -1,13 +1,13 @@
 import HomePage from "./pages/Home//HomePage";
 import AboutUsPage from "./pages/About//AboutUsPage";
 import PortfolioLayout from "./components/Layout/PortfolioLayout";
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import SamplesPage from "./pages/Samples/SamplesPage";
 import ContactPage from "./pages/Contact/ContactPage";
 import BlogPage from "./pages/BlogPage/BlogPage";
 import BlogCardDatail from "./pages/BlogPage/components/BlogCardDatail";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <PortfolioLayout />,

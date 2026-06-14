@@ -1,10 +1,10 @@
-import gitImg from "/images/hero/git.svg";
-import githubImg from "/images/hero/github.svg";
-import reactImg from "/images/hero/react.svg";
-import tailwindImg from "/images/hero/tailwindcss-48.png";
-import jsImg from "/images/hero/js.svg";
-import cssImg from "/images/hero/css.svg";
-import htmlImg from "/images/hero/html-5.svg";
+import gitImg from "/frontEnd-developer-portfolio/images/hero/git.svg";
+import githubImg from "/frontEnd-developer-portfolio/images/hero/github.svg";
+import reactImg from "/frontEnd-developer-portfolio/images/hero/react.svg";
+import tailwindImg from "/frontEnd-developer-portfolio/images/hero/tailwindcss-48.png";
+import jsImg from "/frontEnd-developer-portfolio/images/hero/js.svg";
+import cssImg from "/frontEnd-developer-portfolio/images/hero/css.svg";
+import htmlImg from "/frontEnd-developer-portfolio/images/hero/html-5.svg";
 
 function HeroBox() {
   const skills = [

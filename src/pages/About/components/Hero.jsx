@@ -5,7 +5,11 @@ function Hero() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <HeroIntro />
-      <img src="/images/about/About me.svg" alt="" className="hero-image" />
+      <img
+        src="/frontEnd-developer-portfolio/images/about/About me.svg"
+        alt=""
+        className="hero-image"
+      />
     </div>
   );
 }
